@@ -13,4 +13,4 @@ The landing illustration uses fictional sources and fixed answers. The app is Pe
 
 The full application source, build toolchain and tests are retained in the private `saurabhmisal/pencil-workspace` repository. This public repository contains the generated browser app and offline distribution, with third-party notices included. Do not publish source archives, private source, credentials or workspace data here.
 
-To update the app, run the private source repository's checks and `node scripts/prepare-web.mjs`. Copy the generated `site/app/` and `site/downloads/` directories here, review the diff, and push `main`. No application build is required by Pages. `.github/workflows/pages.yml` uploads the prepared site and allows 30 minutes for the publishing service to finish.
+To update the app, run the private source repository's checks and `node scripts/prepare-web.mjs`. Copy the generated `site/app/` and `site/downloads/` directories here, review the diff, and push `main`. No application build is required by Pages. `.github/workflows/pages.yml` uploads the prepared site and uses GitHub’s supported 10-minute publishing limit.
