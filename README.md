@@ -1,9 +1,16 @@
 # Pencil by Lazo
 
-Standalone HTML, CSS, and JavaScript landing page for https://pencil.lazo.tools. No build step, dependencies, trackers, external fonts, or product backend.
+Public landing page and browser distribution for https://pencil.lazo.tools.
 
-Serve this folder with any static web server. GitHub Pages publishes the root of `main`; `CNAME` declares the custom domain. DNS requires a `pencil` CNAME pointing to `saurabhmisal.github.io`.
+- Website: https://pencil.lazo.tools/
+- Working app: https://pencil.lazo.tools/app/
+- Offline download: https://pencil.lazo.tools/downloads/Pencil_Local_Edition.zip
+- Getting started: https://pencil.lazo.tools/downloads/START_HERE.txt
 
-The interactive demo contains fictional sources and scripted answers, all processed in browser memory. The CTA opens the existing Lazo interest form on Google Forms with Pencil interest prefilled in the optional blocker field. It does not claim to create a Pencil account or guarantee access. Product privacy and source-selection statements are development principles, not released capabilities.
+GitHub Pages publishes the root of `main`. `CNAME` declares `pencil.lazo.tools`, whose DNS points to `saurabhmisal.github.io`. HTTPS is enforced.
 
-This repository is separate from Lazo, Everyday, and Power Chords.
+The landing illustration uses fictional sources and fixed answers. The app is Pencil 0.6 Local Edition: notes, projects, source search and versions, tasks, documents, focus planning, manual calendar export and JSON backup/restore. No account or API key is required. It has no AI generation or cloud sync. The hosted app and downloaded HTML use separate browser storage. Back up before changing browsers, clearing data or moving the downloaded app.
+
+The full application source, build toolchain and tests are retained in the private `saurabhmisal/pencil-workspace` repository. This public repository contains the generated browser app and offline distribution, with third-party notices included. Do not publish source archives, private source, credentials or workspace data here.
+
+To update the app, run the private source repository's checks and `node scripts/prepare-web.mjs`. Copy the generated `site/app/` and `site/downloads/` directories here, review the diff, and push `main`. No build is required by Pages.
