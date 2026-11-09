@@ -1,7 +1,7 @@
-# Pencil website mirror
+# Pencil website — historical mirror (retired)
 
-The active website distribution is maintained in https://github.com/saurabhmisal/pencil-site and hosted on Render at https://pencil.lazo.tools.
+This repository is **not an active Lazo product or deployment source**. The canonical Pencil website is maintained at [saurabhmisal/pencil-site](https://github.com/saurabhmisal/pencil-site) and deployed on Render at [pencil.lazo.tools](https://pencil.lazo.tools). The desktop agent harness lives in the private [Pencil workspace](https://github.com/saurabhmisal/pencil-workspace).
 
-The full application source and tests are in the private repository https://github.com/saurabhmisal/pencil-workspace.
+The original GitHub Pages publishing workflow has been removed. New website changes must go to `pencil-site`; new desktop features must go to `pencil-workspace`. Downloads of current Mac builds must use [Lazo's verified sign-up flow](https://accounts.lazo.tools/signup?product=pencil), **not the older public ZIP in this historical repository**. The old ZIP exists here solely as an immutable-era fallback for previously published prototype documentation, not as a currently supported release.
 
-This repository retains the earlier landing-page sources and browser distribution history. Its GitHub Pages publishing workflow is disabled after repeated Pages service-side deployment stalls. Use the active distribution repository for future website updates.
+**Retirement condition:** after confirming no external links, customers, or recovery processes depend on this historical repository, the repository can be archived or removed through GitHub repository administration. Do not delete unrelated products, customer data, or the independently maintained Power Chords project. No new releases should be published here.
